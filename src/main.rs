@@ -70,11 +70,11 @@ fn modify_circle_system(
     mut materials: ResMut<Assets<ColorMaterial>>,
 ) {
     // Access the mesh and material using the handles
-    if let Some(mesh) = meshes.get_mut(&circle_handles.mesh.0) {
+    if let Some(_mesh) = meshes.get_mut(&circle_handles.mesh.0) {
         // Modify the mesh here
     }
 
-    if let Some(material) = materials.get_mut(&circle_handles.material) {
+    if let Some(_material) = materials.get_mut(&circle_handles.material) {
         // Modify the material here
     }
 }
